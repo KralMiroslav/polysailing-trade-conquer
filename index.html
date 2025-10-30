@@ -31,6 +31,8 @@
       align-items: center;
       justify-content: center;
       padding: 2.8rem 1.5rem 3.5rem;
+      flex-direction: column;
+      gap: 2.5rem;
     }
     .shell {
       width: min(1100px, 100%);
@@ -150,6 +152,45 @@
       margin-top: 1rem;
       opacity: .35;
     }
+    /* SOCIAL CARD */
+    .social-card {
+      max-width: 960px;
+      width: min(960px, 100%);
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.05);
+      text-align: center;
+      padding: 2.5rem 1.5rem 2.9rem;
+    }
+    .social-card img.profile {
+      width: 110px;
+      height: 110px;
+      border-radius: 9999px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #e5f3ff;
+    }
+    .social-btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      margin-bottom: 1.5rem;
+    }
+    .social-btns a {
+      background: #ffffff;
+      border: 1px solid #d1e6ff;
+      color: #0077ff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .social-btns a.primary {
+      background: #0077ff;
+      color: #fff;
+      border: none;
+    }
     @media (max-width: 900px) {
       body { padding: 1.2rem 1.1rem 2.4rem; }
       .shell { grid-template-columns: 1fr; }
@@ -167,7 +208,7 @@
         Low-poly naval sandbox about sailing, trading and sea battles. Build your fleet, explore islands and conquer the seas.
       </p>
       <div class="cta-row">
-        <a class="btn" href="mailto:info@polysailing.com">Contact / Collab →</a>
+        <a class="btn" href="mailto:support@polysailing.com">Contact / Collab →</a>
         <a class="btn secondary" href="https://kralmiroslav.itch.io/polysailing" target="_blank">Play on Itch.io</a>
       </div>
       <div class="meta">
@@ -186,6 +227,26 @@
       </div>
     </section>
   </main>
+
+  <!-- SOCIAL / CONTACT CARD -->
+  <section class="social-card">
+    <!-- pokud máš profilovku v repu, název dej profile.png -->
+    <img src="profile.png" alt="PolySailing profile" class="profile" />
+    <h2 style="font-size:1.7rem; margin-bottom:0.35rem; color:#0f172a;">Follow PolySailing</h2>
+    <p style="color:#5b6b7c; margin-bottom:1.5rem;">
+      Instagram, email a hlavní web na jednom místě.
+    </p>
+    <div class="social-btns">
+      <a class="primary" href="https://polysailing.com">🌍 Website</a>
+      <a href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank" rel="noreferrer">📸 Instagram</a>
+      <a href="mailto:support@polysailing.com">✉️ Email</a>
+    </div>
+    <p style="color:#3a4a5a; margin-bottom:0.5rem;">Scan the QR to follow us:</p>
+    <a href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank" rel="noreferrer">
+      <img src="polysailing_trade_and_conquer_qr.png" alt="Instagram QR" style="max-width:260px; width:100%; border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,.05);" />
+    </a>
+  </section>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
