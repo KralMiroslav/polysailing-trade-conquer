@@ -1,44 +1,47 @@
 # ⚓ PolySailing: Trade & Conquer
 
-Stylizovaná low-poly námořní hra vyvíjená v Unity.
-Cíl: vylepšování lodí, obchod, souboje, postupné objevování světa.
+A stylized low-poly naval adventure built in Unity.  
+Sail across modular worlds, trade between ports, and conquer the seas!
 
-🌍 **Web:** https://polysailing.com  
+🌍 **Website:** https://polysailing.com  
 📸 **Instagram:** https://www.instagram.com/polysailing_trade_and_conquer/  
+✉️ **Contact:** support@polysailing.com *(currently routed to Gmail)*  
 
 ---
 
 ## 📸 Instagram
 
-Sleduj vývoj hry, nové lodě a záběry z Unity:
+Follow our development journey, see new ships, ports, and gameplay teasers:
 
 ![PolySailing Instagram QR](https://raw.githubusercontent.com/KralMiroslav/polysailing-trade-conquer/main/polysailing_trade_and_conquer_qr.png)
 
-> Naskenuj QR mobilem nebo klikni na:  
-> https://www.instagram.com/polysailing_trade_and_conquer/
+> Scan the QR code with your phone or visit:  
+> [https://www.instagram.com/polysailing_trade_and_conquer/](https://www.instagram.com/polysailing_trade_and_conquer/)
 
 ---
 
-## 🧭 O projektu
+## 🧭 About the Project
 
-- Low-poly námořní svět
-- Lodě, přístavy, NPC, souboje děl
-- Testujeme vodu v URP a modulární spawn
-- Cíl: hratelná „public demo“ verze a pravidelné updaty
-
----
-
-## 🛠 Tech
-
-- Engine: **Unity (URP)**
-- Jazyk: **C#**
-- Hosting webu: **GitHub Pages + Cloudflare**
-- Repo: https://github.com/KralMiroslav/polysailing-trade-conquer
+- Low-poly naval world
+- Player and NPC ships, trading, and cannon combat
+- Modular water and buoyancy system in URP
+- Focus: fluid movement, ocean atmosphere, and scalable systems
 
 ---
 
-## 📬 Kontakt
+## 🛠 Technical Stack
 
-**support@polysailing.com**
+- **Engine:** Unity (URP)  
+- **Language:** C#  
+- **Hosting:** GitHub Pages + Cloudflare  
+- **Repository:** [https://github.com/KralMiroslav/polysailing-trade-conquer](https://github.com/KralMiroslav/polysailing-trade-conquer)
+
+---
+
+## 📬 Contact
+
+- **Email:** support@polysailing.com  
+  (temporary routing via Gmail)
+- **Instagram:** [@polysailing_trade_and_conquer](https://www.instagram.com/polysailing_trade_and_conquer/)
 
 ---
