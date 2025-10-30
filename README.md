@@ -5,7 +5,6 @@ Cíl: vylepšování lodí, obchod, souboje, postupné objevování světa.
 
 🌍 **Web:** https://polysailing.com  
 📸 **Instagram:** https://www.instagram.com/polysailing_trade_and_conquer/  
-✉️ **Kontakt (dočasně):** polysailing@gmail.com
 
 ---
 
@@ -40,7 +39,6 @@ Sleduj vývoj hry, nové lodě a záběry z Unity:
 
 ## 📬 Kontakt
 
-- Dočasný e-mail: **polysailing@gmail.com**
-- (Později) **support@polysailing.com** – až zapneme e-mail pro doménu
+**support@polysailing.com**
 
 ---
