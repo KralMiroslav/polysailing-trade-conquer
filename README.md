@@ -21,7 +21,6 @@ PolySailing is a passion project currently in development and any donation helps
 - **Engine:** Unity (URP)  
 - **Language:** C#  
 - **Hosting:** GitHub Pages + Cloudflare  
-- **Repository:** [https://github.com/KralMiroslav/polysailing-trade-conquer](https://github.com/KralMiroslav/polysailing-trade-conquer)
 
 ---
 
