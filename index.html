@@ -4,22 +4,20 @@
   <meta charset="utf-8" />
   <title>PolySailing: Trade & Conquer – Official Game Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PolySailing: Trade & Conquer – a stylized low-poly naval adventure built in Unity. Sail, trade and fight across the seas. Follow development and support the project.">
-  <meta name="keywords" content="PolySailing, Trade & Conquer, naval game, low poly, Unity, pirate, sailing, naval sandbox" />
+  <meta name="description" content="PolySailing: Trade & Conquer – a stylized low-poly naval adventure built in Unity. Sail, trade, fight pirates and conquer the seas! Follow development, support us on Itch.io, and explore the oceans.">
+  <meta name="keywords" content="PolySailing, Trade & Conquer, low poly game, Unity, pirate, sailing, naval sandbox, indie game" />
   <meta property="og:title" content="PolySailing: Trade & Conquer" />
-  <meta property="og:description" content="Low-poly naval sandbox about sailing, trading and sea battles." />
+  <meta property="og:description" content="A low-poly naval adventure about sailing, trading, fighting pirates and monsters. Build your fleet and conquer the oceans." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://polysailing.com/" />
-  <!-- až budeš mít obrázek, jen přepiš URL níže -->
   <meta property="og:image" content="https://polysailing.com/cover.jpg" />
+
   <style>
     :root {
       --bg: radial-gradient(circle at top, #0f172a 0%, #020617 55%, #000 100%);
-      --panel: rgba(15, 23, 42, 0.35);
-      --line: rgba(148, 163, 184, .25);
       --accent: #38bdf8;
       --text: #e2e8f0;
-      --muted: rgba(226, 232, 240, 0.55);
+      --muted: rgba(226, 232, 240, 0.6);
     }
     * { box-sizing: border-box; }
     body {
@@ -31,29 +29,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2.8rem 1.5rem 3.5rem;
+      padding: 2.5rem 1.5rem 3.5rem;
     }
     main.shell {
       width: min(1100px, 100%);
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1.1fr .9fr;
       gap: 2.4rem;
-      background: radial-gradient(circle at 12% 15%, rgba(56,189,248,0.06) 0%, rgba(15,23,42,0) 38%), rgba(15, 23, 42, 0.4);
-      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(15,23,42,0.4);
+      border: 1px solid rgba(148,163,184,0.18);
       border-radius: 1.8rem;
       backdrop-filter: blur(16px);
       box-shadow: 0 25px 50px rgba(0,0,0,.35);
       overflow: hidden;
     }
-    .left { padding: 2.4rem 2.4rem 2rem; }
+    .left { padding: 2.4rem; }
     .right {
       padding: 2.4rem 2.2rem;
       border-left: 1px solid rgba(148,163,184,.08);
       background: radial-gradient(circle, rgba(15,23,42,0) 0%, rgba(2,6,23,.65) 90%);
       display: flex;
       flex-direction: column;
-      gap: 1.4rem;
       justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     .badge {
       display: inline-flex;
@@ -69,15 +68,14 @@
       margin-bottom: 1.1rem;
     }
     h1 {
-      font-size: clamp(2.35rem, 3.3vw, 3rem);
+      font-size: clamp(2.3rem, 3.3vw, 3rem);
       letter-spacing: -.025em;
       margin: 0 0 .6rem;
-      line-height: 1.02;
+      line-height: 1.05;
     }
     .subtitle {
-      font-size: .9rem;
+      font-size: .92rem;
       color: var(--muted);
-      max-width: 38rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
     }
@@ -85,7 +83,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: .75rem;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.6rem;
     }
     .btn {
       background: var(--accent);
@@ -100,42 +98,37 @@
       gap: .35rem;
       cursor: pointer;
       font-size: .85rem;
-      white-space: nowrap;
     }
     .btn.secondary {
       background: rgba(15,23,42,0.15);
       border: 1px solid rgba(226, 232, 240, 0.15);
       color: #e2e8f0;
     }
-    .section-title {
-      font-size: .75rem;
+    h2 {
+      font-size: .9rem;
       text-transform: uppercase;
       letter-spacing: .08em;
-      margin: 1.15rem 0 .4rem;
-      opacity: .6;
+      margin: 1.2rem 0 .6rem;
+      opacity: .7;
     }
-    .feature-list {
-      display: grid;
-      gap: .35rem;
-      margin-bottom: 1rem;
-      font-size: .8rem;
-      color: rgba(226,232,240,.7);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem;
+      font-size: .82rem;
+      color: rgba(226,232,240,.75);
+      line-height: 1.5;
     }
-    .feature-list strong {
-      color: #fff;
-    }
-    footer {
-      font-size: .67rem;
-      text-align: left;
-      margin-top: 1.8rem;
-      opacity: .35;
+    ul li::before {
+      content: "• ";
+      color: var(--accent);
     }
     .qr-box {
       background: rgba(15,23,42,0.15);
       border: 1px solid rgba(148,163,184,.15);
       border-radius: 1.15rem;
-      padding: 1.2rem 1.2rem .9rem;
-      text-align: center;
+      padding: 1.2rem 1rem 1rem;
+      margin-top: 1.2rem;
     }
     .qr-box img {
       max-width: 210px;
@@ -150,69 +143,88 @@
       text-decoration: none;
     }
     .small-link:hover { color: #fff; }
+    footer {
+      font-size: .7rem;
+      text-align: left;
+      margin-top: 2rem;
+      opacity: .4;
+    }
     @media (max-width: 900px) {
-      body { padding: 1.1rem 1.1rem 2.2rem; }
+      body { padding: 1rem; }
       main.shell { grid-template-columns: 1fr; }
       .right { border-left: none; padding-top: 0; }
-      .left { padding-bottom: 1rem; }
-      .cta-row { flex-direction: row; }
     }
   </style>
 </head>
+
 <body>
   <main class="shell">
     <section class="left">
-      <div class="badge">Game project · in development</div>
+      <div class="badge">Game Project · In Development</div>
       <h1>PolySailing:<br />Trade &amp; Conquer</h1>
+
       <p class="subtitle">
-        ⚓ A stylized low-poly naval adventure built in Unity.<br><br>
-        Sail across a low-poly naval world, trade between ports, and conquer the seas. PolySailing is an indie passion project currently in development — any donation helps us create new content and improve the experience for players worldwide.
+        A stylized low-poly naval adventure built in Unity.<br><br>
+        Sail across vast seas, trade between ports, hunt pirates — or become one of them.<br>
+        Battle monsters and conquer the oceans!<br><br>
+        <strong>PolySailing</strong> is an indie passion project currently in development.  
+        Every donation helps us create new content and improve the experience for players worldwide.
       </p>
 
       <div class="cta-row">
         <a class="btn" href="mailto:support@polysailing.com">Contact / Collab →</a>
-        <a class="btn secondary" href="https://kralmiroslav.itch.io/polysailing-trade-conquer" target="_blank" rel="noreferrer">Play / Support on Itch.io</a>
+        <a class="btn secondary" href="https://kralmiroslav.itch.io/polysailing-trade-conquer" target="_blank">Play / Support on Itch.io</a>
       </div>
 
-      <div class="section-title">About the project</div>
-      <div class="feature-list">
-        <div>• Low-poly naval world</div>
-        <div>• Player &amp; NPC ships, trading, cannon combat</div>
-        <div>• Modular water &amp; buoyancy system (URP)</div>
-        <div>• Focus on fluid movement, ocean atmosphere &amp; scalable systems</div>
-      </div>
+      <h2>🧭 About the Project</h2>
+      <ul>
+        <li>Low-poly naval world</li>
+        <li>Player and NPC ships, trading, and cannon combat</li>
+        <li>Modular water and buoyancy system (URP)</li>
+        <li>Focus on smooth movement, ocean atmosphere, and scalability</li>
+      </ul>
 
-      <div class="section-title">Tech stack</div>
-      <div class="feature-list">
-        <div>• Engine: Unity (URP)</div>
-        <div>• Hosting: GitHub Pages + Cloudflare</div>
-      </div>
+      <h2>🛠 Technology</h2>
+      <ul>
+        <li>Built with Unity (URP)</li>
+        <li>Hosted via GitHub Pages and Cloudflare</li>
+      </ul>
+
+      <h2>💛 Support Development</h2>
+      <p class="subtitle" style="margin-bottom:.8rem;">
+        If you enjoy this project, you can support us directly on <a href="https://kralmiroslav.itch.io/polysailing-trade-conquer" target="_blank" style="color:#38bdf8;">itch.io</a>.<br>
+        Every contribution helps us keep sailing forward and building more content for players worldwide.
+      </p>
+      <a href="https://kralmiroslav.itch.io/polysailing-trade-conquer" target="_blank" rel="noreferrer">
+        <img src="https://static.itch.io/images/buy_now_button.svg" alt="Support on itch.io" width="220" />
+      </a>
 
       <footer>
-        © <span id="year"></span> PolySailing: Trade &amp; Conquer. Official project page.
+        © <span id="year"></span> PolySailing: Trade &amp; Conquer. Created and developed by KralMiroslav and contributors.
       </footer>
     </section>
 
     <section class="right">
       <div>
-        <div class="section-title">Follow PolySailing</div>
-        <p style="font-size:.8rem; color:rgba(226,232,240,.7); margin-bottom:.8rem;">
-          Instagram, email and main website in one place.
+        <h2>📸 Screens & Community</h2>
+        <p style="font-size:.8rem; color:rgba(226,232,240,.7); margin-bottom:.6rem;">
+          Follow our development journey and gameplay updates:
         </p>
-        <div class="cta-row" style="margin-bottom:1rem;">
-          <a class="btn" href="https://polysailing.com" target="_blank" rel="noreferrer">🌍 Website</a>
-          <a class="btn secondary" href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank" rel="noreferrer">📸 Instagram</a>
-          <a class="btn secondary" href="mailto:support@polysailing.com">✉️ Email</a>
+        <div class="qr-box">
+          <img src="https://raw.githubusercontent.com/KralMiroslav/polysailing-trade-conquer/main/polysailing_trade_and_conquer_qr.png" alt="PolySailing Instagram QR">
+          <a class="small-link" href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank">
+            @polysailing_trade_and_conquer
+          </a>
         </div>
       </div>
 
-      <div class="qr-box">
-        <p style="font-size:.78rem; margin-bottom:.6rem; color:rgba(226,232,240,.65);">Scan the QR to follow us:</p>
-        <!-- až budeš mít obrázek v repu, nahraď URL níže na relativní -->
-        <img src="https://raw.githubusercontent.com/KralMiroslav/polysailing-trade-conquer/main/polysailing_trade_and_conquer_qr.png" alt="PolySailing Instagram QR">
-        <a class="small-link" href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank" rel="noreferrer">
-          @polysailing_trade_and_conquer
-        </a>
+      <div style="margin-top:1.4rem;">
+        <h2>📬 Contact</h2>
+        <p style="font-size:.8rem; color:rgba(226,232,240,.7); line-height:1.6;">
+          ✉️ <a href="mailto:support@polysailing.com" style="color:#38bdf8;">support@polysailing.com</a><br>
+          📸 <a href="https://www.instagram.com/polysailing_trade_and_conquer/" target="_blank" style="color:#38bdf8;">Instagram</a><br>
+          🌍 <a href="https://polysailing.com" target="_blank" style="color:#38bdf8;">polysailing.com</a>
+        </p>
       </div>
     </section>
   </main>
@@ -222,5 +234,6 @@
   </script>
 </body>
 </html>
+
 
 
