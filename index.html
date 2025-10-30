@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <title>PolySailing: Trade & Conquer – Official Game Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PolySailing: Trade & Conquer – low-poly námořní hra ve vývoji. Plavba, přístavy, souboje, obchod. Oficiální stránka projektu." />
+  <meta name="keywords" content="PolySailing, Trade & Conquer, naval game, low poly, sailing game, pirate" />
+  <meta property="og:title" content="PolySailing: Trade & Conquer" />
+  <meta property="og:description" content="Oficiální stránka připravované hry PolySailing: Trade & Conquer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://polysailing.com/" />
+  <meta property="og:image" content="https://polysailing.com/cover.jpg" />
+  <style>
+    :root {
+      --bg: radial-gradient(circle at top, #0f172a 0%, #020617 55%, #000 100%);
+      --panel: rgba(2, 6, 23, 0.35);
+      --stroke: rgba(148, 163, 184, .25);
+      --accent: #38bdf8;
+      --text: #e2e8f0;
+      --muted: rgba(226, 232, 240, 0.55);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.8rem 1.5rem 3.5rem;
+    }
+    .shell {
+      width: min(1100px, 100%);
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 2.4rem;
+      background: radial-gradient(circle at 12% 15%, rgba(56,189,248,0.06) 0%, rgba(15,23,42,0) 38%), rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 1.8rem;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 25px 50px rgba(0,0,0,.35);
+      overflow: hidden;
+    }
+    .left {
+      padding: 2.4rem 2.4rem 2.1rem;
+    }
+    .badge {
+      display: inline-flex;
+      gap: .4rem;
+      align-items: center;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: .38rem .7rem .3rem;
+      border-radius: 999px;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 1.1rem;
+    }
+    h1 {
+      font-size: clamp(2.35rem, 3.3vw, 2.95rem);
+      letter-spacing: -.025em;
+      margin: 0 0 .6rem;
+      line-height: 1.02;
+    }
+    .subtitle {
+      font-size: .94rem;
+      color: var(--muted);
+      max-width: 37rem;
+      line-height: 1.5;
+      margin-bottom: 1.6rem;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-bottom: 1.4rem;
+    }
+    .btn {
+      background: var(--accent);
+      color: #020617;
+      border: none;
+      border-radius: .95rem;
+      padding: .55rem 1.2rem .6rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      cursor: pointer;
+      font-size: .85rem;
+    }
+    .btn.secondary {
+      background: rgba(15,23,42,0.15);
+      border: 1px solid rgba(226, 232, 240, 0.15);
+      color: #e2e8f0;
+    }
+    .meta {
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      opacity: .6;
+    }
+    .right {
+      background: radial-gradient(circle, rgba(15,23,42,0) 0%, rgba(2,6,23,.65) 80%);
+      border-left: 1px solid rgba(148,163,184,.1);
+      padding: 2.4rem 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .preview {
+      width: 100%;
+      aspect-ratio: 16/10;
+      background: linear-gradient(150deg, rgba(15,23,42,.05), rgba(56,189,248,.25)), radial-gradient(circle at 80% 20%, rgba(255,255,255,.03), rgba(15,23,42,0));
+      border: 1px solid rgba(148,163,184,.18);
+      border-radius: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .preview small {
+      opacity: .45;
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+    }
+    .island {
+      position: absolute;
+      inset: auto;
+      width: 42%;
+      aspect-ratio: 4/3;
+      border-radius: 1.35rem;
+      background: radial-gradient(circle at 50% 40%, #f8fafc 0%, #38bdf8 0%, #0f172a 55%, rgba(15,23,42,0) 73%), linear-gradient(165deg, rgba(15,23,42,0) 0%, rgba(15,23,42,1) 75%);
+      filter: drop-shadow(0 15px 30px rgba(0,0,0,.35));
+      opacity: .08;
+      top: 10%;
+      right: 5%;
+      transform: rotate(-12deg);
+    }
+    footer {
+      font-size: .67rem;
+      text-align: left;
+      margin-top: 1rem;
+      opacity: .35;
+    }
+    @media (max-width: 900px) {
+      body { padding: 1.2rem 1.1rem 2.4rem; }
+      .shell { grid-template-columns: 1fr; }
+      .right { border-left: none; padding-top: 0; }
+      .left { padding-bottom: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="left">
+      <div class="badge">Game project · in development</div>
+      <h1>PolySailing:<br />Trade &amp; Conquer</h1>
+      <p class="subtitle">
+        Low-poly námořní hra o plavbě mezi ostrovy, přístavech a potyčkách s NPC loděmi. Styl Unity, malé 3D miniatury, náš vlastní vizuál.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:info@polysailing.com">Kontakt / collab →</a>
+        <a class="btn secondary" href="#about">Dev info</a>
+      </div>
+      <div class="meta" id="about">
+        <div>🛶 top-down / naval</div>
+        <div>🧭 trade &amp; combat</div>
+        <div>🧊 low-poly styl</div>
+      </div>
+      <footer>
+        © <span id="year"></span> PolySailing: Trade &amp; Conquer. Official project page.
+      </footer>
+    </section>
+    <section class="right">
+      <div class="preview">
+        <small>Preview area – sem později dáš render lodi / přístavu</small>
+        <div class="island"></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
